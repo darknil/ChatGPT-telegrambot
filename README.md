@@ -18,10 +18,10 @@ With our bot, you can easily spark up amusing conversations and expand your know
 
 3.Instal openai api using - `npm i openai`
 
-Write your telegram api in TELEGRAM TOKEN.
+Write your telegram api in `TELEGRAM TOKEN`
 
-Write your Openai API in OPENAI API and change ORGANIZATION
+Write your Openai API in OPENAI API and change `ORGANIZATION`
 
-Write your bot hashtag in YOURBOTHASH
+Write your bot hashtag in `YOURBOTHASH`
 
 Run `node main.js` and enjoy :)
