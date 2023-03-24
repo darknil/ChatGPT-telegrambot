@@ -20,7 +20,7 @@ With our bot, you can easily spark up amusing conversations and expand your know
 
 Write your telegram api in `TELEGRAM TOKEN`
 
-Write your Openai API in OPENAI API and change `ORGANIZATION`
+Write your Openai API in `OPENAI API` and change `ORGANIZATION`
 
 Write your bot hashtag in `YOURBOTHASH`
 
