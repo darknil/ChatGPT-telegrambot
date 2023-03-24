@@ -16,7 +16,7 @@ With our bot, you can easily spark up amusing conversations and expand your know
 
 2.Instal telegram api using - `npm i node-telegram-bot-api`
 
-3.Instal openai api using - `npm install openai`
+3.Instal openai api using - `npm i openai`
 
 Write your telegram api in TELEGRAM TOKEN.
 
