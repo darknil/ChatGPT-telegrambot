@@ -8,7 +8,7 @@ It works seamlessly with MongoDB, a popular NoSQL database system, to store and 
 
 With our bot, you can easily spark up amusing conversations and expand your knowledge in various topics. So whether you're looking for a quick chat or want to enrich your learning experience, this bot is the perfect fit for you!
 
-#requirements
+# Requirements
 
 
 
