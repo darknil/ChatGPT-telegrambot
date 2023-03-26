@@ -1,8 +1,6 @@
 {
   "dependencies": {
-    "flatted": "^3.2.7",
     "mongodb": "^5.1.0",
-    "mongoose": "^7.0.1",
     "node-telegram-bot-api": "^0.61.0",
     "openai": "^3.2.1"
   },
