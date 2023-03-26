@@ -1,4 +1,4 @@
-# Node-Js-ChatGPT-bot
+# Node-Js-ChatGPT-telegram-bot
 bot that uses ChatGPT
 
 
