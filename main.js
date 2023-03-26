@@ -11,7 +11,7 @@ const { getusersID } = require('./notifyusers');
 
 ////////// Telegram variables
 const TelegramBot = require('node-telegram-bot-api');
-const token ='TELEGRAM TOKEN';
+const token ='TELEGRAM TOKEN';                  // <============== TELEGRAM TOKEN
 const bot = new TelegramBot(token,{polling:{
     interval:300,
     params:{
@@ -22,9 +22,9 @@ const bot = new TelegramBot(token,{polling:{
 
 //////////////// OpenAI API
 const { Configuration, OpenAIApi } = require("openai");
-const OPENAI_API_KEY = 'OPENAI TOKEN';
+const OPENAI_API_KEY = 'OPENAI TOKEN';                 // <============== OPENAI TOKEN
 const configuration = new Configuration({
-    organization:'OPENAI ORGANIZATION',
+    organization:'OPENAI ORGANIZATION',                 // <============== OPENAI ORGANIZATION
     apiKey: OPENAI_API_KEY,
   });
 const openai = new OpenAIApi(configuration);
@@ -38,7 +38,7 @@ const openai = new OpenAIApi(configuration);
 //////////////// global vars
 const messageforuser = "User: Hi, I'm having trouble understanding how to use your chatbot. Can you help me?\n\nChatbot: Hello! Of course, I'd be happy to help. What can I assist you with?\n\nUser: I'm not sure how to start a conversation with you. Do I just say anything, or is there a specific way to ask questions?\n\nChatbot: You can ask me anything you'd like. I'm programmed to understand natural language, so feel free to phrase your questions or statements however you'd like. Just keep in mind that I'm here to assist with information or tasks related to my expertise.";
 const infotext = 'What this bot can:\n\nanswer for your messages\n\ngenerate image by using /image "your text" command\n\nSpeech to text and send as request --- coming soon.';
-const mentionRegex = new RegExp(`@YOURBOTHASH`, 'i');
+const mentionRegex = new RegExp(`@YOURBOTHASH`, 'i'); // <==========YOURBOTHASH
 const ImageReg = /^\/image/;
 let usersList ={
     1:{name:"test","messages":[]},
