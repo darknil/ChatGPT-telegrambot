@@ -38,17 +38,17 @@ const openai = new OpenAIApi(configuration);
 //////////////// global vars
 const messageforuser = "User: Hi, I'm having trouble understanding how to use your chatbot. Can you help me?\n\nChatbot: Hello! Of course, I'd be happy to help. What can I assist you with?\n\nUser: I'm not sure how to start a conversation with you. Do I just say anything, or is there a specific way to ask questions?\n\nChatbot: You can ask me anything you'd like. I'm programmed to understand natural language, so feel free to phrase your questions or statements however you'd like. Just keep in mind that I'm here to assist with information or tasks related to my expertise.";
 const infotext = 'What this bot can:\n\nanswer for your messages\n\ngenerate image by using /image "your text" command\n\nSpeech to text and send as request --- coming soon.';
-const mentionRegex = new RegExp(`@YOURBOTHASH`, 'i'); // <==========YOURBOTHASH
+const mentionRegex = new RegExp(`@YOURBOTHASH`, 'i'); // <==========YOURBOTHASH ееее, регулярки, вся сила регулрок в этой строчке
 const ImageReg = /^\/image/;
 let usersList ={
-    1:{name:"test","messages":[]},
+    1:{name:"test","messages":[]}, // да
 };
 const donateAdress = 'crypto eth for everyone :) 0x7F23e289A9a8120Ea1bB2cCC71d388a415B6E4A5';
 const qiwiadress ='Qiwi for RUB - qiwi.com/p/79609614863 ';
 const privatbankUA = 'PrivatBank for UAH - 4731185610368521';
 const Revolut = 'for USD - 4731185610882851\n\nfor EUR - 4731185614196258'
 const donatetext = 'Thank you for using that bot. This is a test work of the bot. The bot may not work at times, I try to restart it and work on fixing bugs.Donations can be great ways to support this project in the form of a telegram bot that uses the chatgpt neural network. ways to support me:';
-const msgreceived = 'The message has been received. Please wait…\n\nThanks for using me and donates.';
+const msgreceived = 'The message has been received. Please wait…\n\nThanks for using me and donates.'; // хардкод наше все
 //////////////// global vars
 
 //////////////// Functions
@@ -86,6 +86,7 @@ function logInfo() {
 //// добавить функции
 //// изменить обнуление на обновление до последних 5 сообщений --- DONE
 //// сделать чтоб в группе можно было реплаить сообщения
+//// сделать нормальный флоу проекта, а не писать все в комментах главного файла
 
 bot.setMyCommands([
     {command: '/start', description: 'start bot'},
@@ -116,7 +117,7 @@ bot.on('message',async (msg)=>{
             //   }});
             if(chatId === 412636373){
                 const messages = ["Dear ChatGPT Rabbit users,\n\nWe would like to bring to your attention that our project may be discontinued soon due to lack of funding, and the free period of API usage is coming to an end. If you value our project and wish to help its further development, we would be grateful for any support.\n\nYou can make a donation at this link https://t.me/GPTJokes1/10.\n\nThank you in advance for your support, and we hope that your experience using our bot has been helpful to you. If you have any questions or comments, please do not hesitate to contact us.\n\nBest regards,\nChatGPT Rabbit team\n\n\n\nУважаемые пользователи проекта ChatGPT Rabbit!\n\nХотим обратить ваше внимание на то, что наш проект может быть прекращен из-за отсутствия финансирования, и бесплатный период использования API скоро закончится. Если вы цените наш проект и желаете помочь в его развитии, мы будем признательны за любую поддержку.\n\nВы можете сделать пожертвование по этой ссылке https://t.me/GPTJokes1/10.\n\nЗаранее благодарим за вашу поддержку, и мы надеемся, что использование нашего бота ChatGPT Rabbit было полезно для вас. Если у вас есть вопросы или замечания, пожалуйста, не стесняйтесь обратиться к нам.\n\nС уважением,\nкоманда проекта ChatGPT Rabbit"];
-                const lebowski = ["Where's the Money, Lebowski?"];
+                const lebowski = ["Where's the Money, Lebowski?"]; // просто да
                 const ids = await getusersID();
                 const delay = (time) => new Promise((resolve) => setTimeout(resolve, time));
 

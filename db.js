@@ -145,7 +145,12 @@ async function resetUserMessages(userId){
     const result = await users.findOne(query);
     if (result && result[userId] && result[userId].messages){
       const messages = result[userId].messages;
-      const updatedMessages = messages.slice(Math.max(messages.length - 5, 0));
+        const updatedMessages = messages.slice(Math.max(messages.length - 5, 0));
+        /*
+        о да, а ну давай этот массив сюда
+        боже как я люблю массивы, нахуя человечество придумало какие то Stack
+        когда есть прекрасные сквадратные скобочки [[[[[]]]]]
+        */
       await users.updateOne(
         query,
         { $set: { [`${userId}.messages`]: updatedMessages } }
