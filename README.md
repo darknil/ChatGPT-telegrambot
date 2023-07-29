@@ -8,6 +8,14 @@ It works seamlessly with MongoDB, a popular NoSQL database system, to store and 
 
 With our bot, you can easily spark up amusing conversations and expand your knowledge in various topics. So whether you're looking for a quick chat or want to enrich your learning experience, this bot is the perfect fit for you!
 
+![photo_2023-03-17_00-32-27](https://github.com/darknil/ChatGPT-telegrambot/assets/45723342/4d10df21-c8a3-4153-b781-38767fe7c497)
+
+![photo_2023-03-21_19-46-15](https://github.com/darknil/ChatGPT-telegrambot/assets/45723342/6d8d5943-5755-4ce9-8819-fb04b0765921)
+
+![photo_2023-03-21_19-46-25](https://github.com/darknil/ChatGPT-telegrambot/assets/45723342/4262194f-af1d-4b8a-971e-e632d56ede95)
+
+
+
 # Requirements
 
 
